@@ -8,11 +8,7 @@
 
 ## What's the problem?
 
-Human evolution and disease is driven by de novo variants arising in a child, but absent in their parents. The germline mutation rate in humans is estimated to be 1.27e−8 SNVs and 1.5e−9 indels per generation (~73 de novo SNVs and ~9 de novo indels per child) [https://www.nature.com/articles/ncomms6969]. **Any estimates for SVs?** 
-
-Mendelian disorders, aka monogenic diseases, are undiagnosed by exome sequencing in ~50-75% of cases [https://www.nature.com/articles/ncomms15824]. A sizable portion of mendelian diseases are caused by SVs, (including complex SVs), but the extent of this is unclear [Schuy et al. 2022]. In the absence of reliable databases for phenotypically relevant SVs - like gnomAD or clinvar for SNVs - the interpretation of variants is often challenging.
-
-In the case of a diseased child of healthy parents, all de-novo SVs are promising candidates for disease association and thus interesting to know. They can, in principle, be found via mendelian inconsistency analysis. In practice, this will yield false positives due to noise inherent in SV calling and merging. 
+Mendelian inconsistency in SV calls can indicate two possibilities: challenges in SV calling leading to false positive or negative calls across the trio, or a genuine de novo SV. De novo SVs are rare, with an estimated rate of 0.16 de novo SVs per genome in healthy individuals [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8059337/]. Despite their rarity, de novo SVs have been associated with autism [REF]. In addition, benchmarking studies have used the former aspect to support the validity of their SV calls. Here, we aim to investigate putative de novo SVs to either validate them, or use their properties to inform strategies for more accurate SV calling.
 
 # What is <this software>?
 
