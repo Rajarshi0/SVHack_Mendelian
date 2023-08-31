@@ -8,7 +8,9 @@
 
 ## What's the problem?
 
-Rare diseases, which are variably defined as having a prevalence of 5-80 per 100,000 people, are estimated to affect 3.5-5.9% of the global population (263-446 million) and approximately 72% of the rare diesease in Orphanet have a genetic etiology [https://pubmed.ncbi.nlm.nih.gov/31527858/]. Mendelian disorders, aka monogenic diseases, are undiagnosed by exome sequencing in ~50-75% of cases [https://www.nature.com/articles/ncomms15824]. A sizable portion of mendelian diseases are caused by SVs, (including complex SVs), but the extent of this is unclear [Schuy et al. 2022]. In the absence of reliable databases for phenotypically relevant SVs - like gnomAD or clinvar for SNVs - the interpretation of variants is often challenging.
+Human evolution and disease is driven by de novo variants arising in a child, but absent in their parents. The germline mutation rate in humans is estimated to be 1.27e−8 SNVs and 1.5e−9 indels per generation (~73 de novo SNVs and ~9 de novo indels per child) [https://www.nature.com/articles/ncomms6969]. **Any estimates for SVs?** 
+
+Mendelian disorders, aka monogenic diseases, are undiagnosed by exome sequencing in ~50-75% of cases [https://www.nature.com/articles/ncomms15824]. A sizable portion of mendelian diseases are caused by SVs, (including complex SVs), but the extent of this is unclear [Schuy et al. 2022]. In the absence of reliable databases for phenotypically relevant SVs - like gnomAD or clinvar for SNVs - the interpretation of variants is often challenging.
 
 In the case of a diseased child of healthy parents, all de-novo SVs are promising candidates for disease association and thus interesting to know. They can, in principle, be found via mendelian inconsistency analysis. In practice, this will yield false positives due to noise inherent in SV calling and merging. 
 
