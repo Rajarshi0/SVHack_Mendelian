@@ -1,81 +1,28 @@
 # SVHack_Mendelian
 
-## Please cite our work -- here is the ICMJE Standard Citation:
+## Please cite our work
 
-### ...and a link to the DOI:
+### DOI:
 
-## Awesome Logo
-
-### You can make a free DOI with zenodo <link>
-
-## Website (if applicable)
-
-## Intro statement
+# Introduction
 
 ## What's the problem?
 
-## Why should we solve it?
+Rare diseases, which are variably defined as having a prevalence of 5-80 per 100,000 people, are estimated to affect 3.5-5.9% of the global population (263-446 million) and approximately 72% of the rare diesease in Orphanet have a genetic etiology [https://pubmed.ncbi.nlm.nih.gov/31527858/]. Mendelian disorders, aka monogenic diseases, are undiagnosed by exome sequencing in ~50-75% of cases [https://www.nature.com/articles/ncomms15824]. A sizable portion of mendelian diseases are caused by SVs, (including complex SVs), but the extent of this is unclear [Schuy et al. 2022]. In the absence of reliable databases for phenotypically relevant SVs - like gnomAD or clinvar for SNVs - the interpretation of variants is often challenging.
+
+In the case of a diseased child of healthy parents, all de-novo SVs are promising candidates for disease association and thus interesting to know. They can, in principle, be found via mendelian inconsistency analysis. In practice, this will yield false positives due to noise inherent in SV calling and merging. 
 
 # What is <this software>?
 
-Overview Diagram
-
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/aim1.png?raw=true">
-
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/aim2.png?raw=true">
+<This software> is a QC framework tool that creates a local assembly of every novel SV candidate locus in each member of the trio to aid in confirming that the SV is indeed novel in the child.
 
 # How to use <this software>
 
 # Software Workflow Diagram
 
-# File structure diagram 
-#### _Define paths, variable names, etc_
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/jdh/SVHack_Mendelian_overview.drawio.png">
 
-# Installation options:
+# Installing <this software> from Github
 
-We provide two options for installing <this software>: Docker or directly from Github.
-
-### Docker
-
-The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
-
-1. `docker pull ncbihackathons/<this software>` command to pull the image from the DockerHub
-2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
-3. Edit the configuration files as below
-
-### Installing <this software> from Github
-
-1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-2. Edit the configuration files as below
-3. `sh server/<this software>.sh` to test
-4. Add cron job as required (to execute <this software>.sh script)
-
-### Configuration
-
-```Examples here```
-
-# Testing
-
-We tested four different tools with <this software>. They can be found in [server/tools/](server/tools/) . 
-
-# Additional Functionality
-
-### DockerFile
-
-<this software> comes with a Dockerfile which can be used to build the Docker image.
-
-  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-  2. `cd server`
-  3. `docker build --rm -t <this software>/<this software> .`
-  4. `docker run -t -i <this software>/<this software>`
-  
-### Website
-
-There is also a Docker image for hosting the main website. This should only be used for debug purposes.
-
-  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-  2. `cd Website`
-  3. `docker build --rm -t <this software>/website .`
-  4. `docker run -t -i <this software>/website`
-  
+`git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git`  
 
